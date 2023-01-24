@@ -22,8 +22,8 @@ public class StatisticsServiceTest {
     void boundaryValues() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {-100,-1,0,1,100};
-        long expected = 100;
+        long[] incomesInBillions = {-100,-1,0,1,101};
+        long expected = 101;
 
         long actual = service.findMax(incomesInBillions);
 
